@@ -1,0 +1,1 @@
+4 Apr - 1 hr 30 mins - set up, brainstorming ideas for look/feel of webpage, gathering images
