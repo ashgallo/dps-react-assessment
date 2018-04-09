@@ -69,7 +69,7 @@ const styles = {
     margin: '0 auto',
   },
   header: {
-    color: '#2ecc40'
+    color: '#white'
   }
 }
 

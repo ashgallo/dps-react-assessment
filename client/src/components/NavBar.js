@@ -11,13 +11,21 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <Menu pointing>
-          <Link to='/'>
-            <Menu.Item name='home' active={this.activeItem('/')} />
+        <Menu 
+        style={styles.Nav}
+        pointing>
+          <Link to='/allbeers'>
+            <Menu.Item name='Find your beer' />
+          </Link>
+          <Link to='/allbreweries'>
+            <Menu.Item name='Find a Brewery' />
           </Link>
           <Menu.Menu position='right'>
             <Link to='/'>
-              <Menu.Item name='DPS React Assessment' />
+              <Menu.Item name='Home' />
+            </Link>
+            <Link to='/instructions'>
+              <Menu.Item name='Assessment' />
             </Link>
           </Menu.Menu>
         </Menu>
@@ -25,5 +33,12 @@ class NavBar extends Component {
     )
   }
 }
+
+const styles = {
+  Nav: {
+    backgroundColor: "white",
+    width: "100%",
+  }
+};
 
 export default withRouter(NavBar);
